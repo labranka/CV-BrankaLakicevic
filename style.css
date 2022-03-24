@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yaldevi", sans-serif;
+}
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000;
+  min-height: 1000px;
+  margin: 50px;
+  background: #e6c4ee;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_Side {
+  position: relative;
+  background: #3d3646;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container .right_Side {
+  position: relative;
+  background: rgb(216, 214, 218);
+  padding: 40px;
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h2 {
+  color: seashell;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0px;
+  margin-left: -30px;
+  margin-right: -70px;
+  cursor: pointer;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: rgb(170, 133, 187);
+}
+.contactInfo ul li span {
+  color: white;
+  font-weight: 300;
+}
+
+.contactInfo.education li {
+  margin-bottom: 10px;
+}
+
+.contactInfo.education h5 {
+  color: #c4bfcc;
+  font-weight: 600;
+}
+
+.contactInfo.education h4:nth-child(2) {
+  color: #c7c0d1;
+  font-weight: 800;
+}
+
+.contactInfo.education h4 {
+  color: #b3beff;
+  font-weight: 400;
+}
+
+.contactInfo.language .percent {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  background: rgba(122, 118, 118, 0.651);
+  display: block;
+  margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgb(149, 141, 156);
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: rgb(21, 15, 29);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: rgb(88, 39, 39);
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  border-bottom: 1px solid rgba(36, 9, 9, 0.753);
+}
+
+.about .box .year_company {
+  min-width: 250px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: rgb(88, 39, 39);
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: rgb(95, 35, 35);
+  font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: rgb(121, 59, 59);
+  font-weight: 500;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 85%;
+  height: 10px;
+  background: rgb(214, 180, 180);
+}
+
+.skills .box .percent div {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: rgb(131, 46, 46);
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: darkred;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: rgb(58, 7, 7);
+  font-size: 18px;
+  width: 20px;
+}
+
+.githubtext {
+  text-decoration: underline;
+  text-decoration-color: #625175;
+}
